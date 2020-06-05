@@ -22,7 +22,6 @@ export default Vue.component('resume', {
   width: 100%;
 }
 .page-wrapper {
-  overflow-x: hidden;
   background: #CCCCCC;
   margin: 0;
   padding: 0;

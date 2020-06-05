@@ -2,8 +2,7 @@
   <div class="resume">
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
-      <div class="banner__position">{{ person.position }}</div>
-      <div v-if="person.birth" class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
+      <div class="banner__position">{{ person.position }} - {{ person.tagline }}</div>
     </div>
 
     <div class="content">
@@ -14,10 +13,7 @@
           </div>
 
           <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
+            <span style="white-space: pre-wrap;">{{ person.about }}</span>
           </div>
         </div>
 
@@ -47,9 +43,6 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
 
             <a
               class="section-link"
@@ -72,14 +65,14 @@
               v-if="person.contact.linkedin"
               class="section-link"
               :href="contactLinks.linkedin">
-              <i class="section-link__icon fa fa-linkedin"></i>{{ person.contact.linkedin }}
+              <i class="section-link__icon fa fa-linkedin"></i>linkedin
             </a>
 
             <a
               v-if="person.contact.github"
               class="section-link"
               :href="contactLinks.github">
-              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
+              <i class="section-link__icon fa fa-github"></i>github
             </a>
 
             <a
@@ -105,11 +98,7 @@
               class="section-content__item"
               :href="experience.website">
 
-              <span class="section-content__header">{{ experience.position }}</span>
-              <span class="section-content__subheader">
-                {{ experience.company }}
-                <span class="section-content__plain">{{ experience.location }}</span>
-              </span>
+              <span class="section-content__header">{{ experience.position }} @ {{ experience.company }}</span>
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
@@ -246,7 +235,7 @@ a {
   }
 
   &__position {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   &__location {

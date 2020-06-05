@@ -1,46 +1,85 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Simon
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: Bronner
+about: I've been actively writing, building and deploying software
+  solutions for over 10 years from the smallest of startups to the largest of enterprises.
 
-birth:
-  year: 1990
-  location: New York
+
+  An adaptable self-starter with a passion for solving problems - I enjoy the endlessly evolving industry in which I ply my trade.
+
+
+  I love being part of a team - either as a valued experienced developer, or in leadership roles.
+position: Software Engineer
+tagline: A polyglot developer with a knack for DevOps and Software Design.
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
-
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Contino
+  position: Lead Cloud Consultant
+  timeperiod: since April 2019
+  description: Consultancy specialising in Cloud & DevOps, particularly with AWS and GCP, for large Enterprises.
+  website: https://www.contino.io
+- company: Temenos
+  position: Software Architect
+  timeperiod: February 2017 - April 2019
+  description: Provided Software Design & hands on technical leadership in the development of Micro-services
+    based products for the Australian Wealth market.
+  website: https://www.temenos.com
+- company: SRO
+  position: Senior Software Engineer
+  timeperiod: September 2016 - February 2017
+  description: Reviewed the Business Process Management solution, introduced changes to improve the stability
+    and maintainability of the production systems.
+  website: https://www.sro.vic.gov.au
+- company: Provisio
+  position: Technical Lead
+  timeperiod: September 2011 - September 2016
+  description: Lead the team that built and operated the Provisio Financial Planning (AWS) SaaS product.
+  website: https://www.provisio.com.au
+- company: SRO
+  position: Solution Architect (Contract)
+  timeperiod: March 2009 - August 2011
+  description: Provided Solution Architecture across all SRO IT projects.
+  website: https://www.sro.vic.gov.au
+- company: Dun & Bradstreet
+  position: Software Engineer (Contract)
+  timeperiod: October 2008 - March 2009
+  description: Built out a variety of data processing pipelines and reporting engines.
+  website: https://www.dnb.com
+- company: MidVision
+  position: Software Engineer (Contract)
+  timeperiod: July 2008 - December 2009
+  description: Built out the MidVision Infrastructure as Code flagship product "RapidDeploy".
+  website: https://www.midvision.com
+- company: Marsh 
+  position: Software Engineer (Contract)
+  timeperiod: Feb 2006 - July 2008
+  description: Designed and Built a number of APIs and UI products as part of a large enterprise transformation project
+  website: https://www.mmc.com
+- company: Dow Jones
+  position: Software Engineer (Contract)
+  timeperiod: September 2005 - February 2006
+  description: Designed and Built UIs over the Factiva search engines. 
+  website: https://professional.dowjones.com/factiva/
+- company: Coles Myer
+  position: Graduate / Software Engineer
+  timeperiod: September 2000 - September 2005
+  description: A programmer on the Coles Point of Sale project, Liquorland EFT, and Coles Online web and fulfillment "headless" POS design and development.
+  website: https://www.coles.com.au
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Computer Science
+  timeperiod: Feb 1997 - Nov 1999
+  description: RMIT University
+  website: https://www.rmit.edu.au/
 
 # skill level goes 0 to 100
 skills:
+- name: Clojure
+  level: 60
+- name: Java
+  level: 99
 - name: HTML5
   level: 99
 - name: CSS3
@@ -49,44 +88,105 @@ skills:
   level: 97
 - name: Node.js
   level: 93
-- name: Angular 2
+- name: Vue.js
   level: 60
 - name: TypeScript
   level: 80
-- name: ES.Next
+- name: Python
   level: 70
+- name: Terraform
+  level: 99
 - name: Docker
   level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: React
+  level: 99
+- name: GCP
+  level: 99
+- name: AWS
+  level: 99
+- name: Azure
+  level: 99
+- name: Jenkins
+  level: 99
+- name: Bash
+  level: 50
+- name: Make
+  level: 50
+- name: Kubernetes
+  level: 99
+- name: Ansible
+  level: 99
+- name: NET Core
+  level: 99
+- name: C#
+  level: 99
+- name: Chef
+  level: 99
+- name: GraphQL
+  level: 99
+- name: SQL
+  level: 99
+- name: Datomic
+  level: 99
+- name: Datalog
+  level: 99
+- name: Powershell
+  level: 99
+- name: Git
+  level: 99
+- name: Agile
+  level: 99
+- name: JPA
+  level: 99
+- name: TDD
+  level: 99
+- name: SCRUM
+  level: 99
+- name: Software Design
+  level: 99
+- name: Architecture
+  level: 99
+- name: Java EE
+  level: 99
+- name: Spring
+  level: 99
+- name: REST
+  level: 99
+- name: APIs
+  level: 99
+- name: Maven
+  level: 99
+- name: CI/CD
+  level: 99
+- name: GKE
+  level: 99
 
-projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+knowledge:
 
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+#projects:
+#- name: best-resume-ever
+#  platform: Vue
+#  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+#  url: https://github.com/salomonelli/best-resume-ever
+#
+#hobbies:
+#- name: Cycling
+#  iconClass: fa fa-gamepad
+#  url: https://example.com
+#
+#- name: Swimming
+#  iconClass: fa fa-pencil
+#  url: https://example.com
+#
+#contributions:
+#- name: best-resume-ever
+#  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+#  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
-# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+  email: simon@bronner.network
+  phone: +61 419 539 078
+  github: simonbronner
+  linkedin: simon-bronner-1bb4152
 lang: en
 `
