@@ -36,7 +36,7 @@
     "raleway-webfont": "3.0.1",
     "roboto-fontface": "0.10.0",
     "source-sans-pro": "2.20.2",
-    "vue": "2.5.17",
+    "vue": "3.0.0",
     "vue-router": "3.0.1"
   },
   "devDependencies": {
